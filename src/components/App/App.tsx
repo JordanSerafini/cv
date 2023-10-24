@@ -1,26 +1,41 @@
-import logo from '../../assets/logo.svg';
+import { useState } from 'react';
+
+import Header from '../Header/Header';
+import Cv from '../mainContent/Cv';
+import Home from '../mainContent/Home';
+import Portofoglio from '../mainContent/Portofoglio';
 
 import './App.scss';
 
 function App() {
+  // NAVBAR
+  const [content, setContent] = useState('Home');
+
+  const changeContent = (newContent: string) => {
+    setContent(newContent);
+  };
+
+  const renderContent = () => {
+    switch (content) {
+      case 'Home':
+        return <Home />;
+      case 'Cv':
+        return <Cv />;
+      case 'Portofoglio':
+        return <Portofoglio />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <p>
-          Edit <code>src/components/App/App.tsx</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://react.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header
+        className="Header"
+        content={content}
+        changeContent={changeContent}
+      />
+      <div className="content-grid">{renderContent()}</div>{' '}
     </div>
   );
 }
