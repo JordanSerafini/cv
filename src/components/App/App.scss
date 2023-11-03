@@ -109,7 +109,8 @@
 .Home {
   display: flex;
   flex-direction: row;
-  background: #3399ff;
+  background: rgba(187, 183, 183, 0.61);
+
 
 }
 
@@ -168,7 +169,8 @@
 }
 
 .Title-Right {
-  background-color: rgba(0, 0, 255, 0.514);
+  background-color: rgba(2, 2, 2, 0.705);
+  color: white;
   height: 2rem;
   display: flex;
   flex-direction: column;

@@ -9,6 +9,10 @@ import tailwindLogo from "../../assets/tailwindLogo.jpg";
 import socketLogo from "../../assets/socketLogo.png";
 import dockerLogo from "../../assets/dockerLogo.png";
 import githubLogo from "../../assets/githubLogo.png";
+import LinkdnLogo from "../../assets/LinkdnLogo.png";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faHome, faAddressBook, faDownload  } from '@fortawesome/free-solid-svg-icons';
 
 
 function Home() {
