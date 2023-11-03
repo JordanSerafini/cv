@@ -7,24 +7,24 @@
 }
 
 .Header {
-  display: grid;
-  grid-template-columns: 25rem 1fr;
-  grid-template-rows: repeat(3, auto);
-  height: 18rem;
+  display: flex;
+  
+  height: 15rem;
+  width: 100%;
   border-bottom: 2px black solid;
 
   .photo {
-    grid-row: span 3;
-    width: 100%;
     height: 100%;
+    width: 25%;
     border-right: solid black 1px;
   }
 
   .name {
+    height: 4rem;
     color: rgba(255, 255, 255, 0.897);
     background-color: rgba(2, 2, 2, 0.795);
     font-family: 'Open Sans', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
     display: flex;
     align-items: center;
@@ -32,38 +32,53 @@
   }
 
   .job {
+    height: 4rem;
+
     color: rgba(255, 255, 255, 0.897);
     background-color: rgba(2, 2, 2, 0.849);
     font-family: 'Open Sans', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     padding-left: 7.5rem;
   }
 
   .Navbar_Container {
+    height: 7rem;
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     align-items: center;
   }
 
   .NavBar_List {
-    display: flex;
-    flex-grow: 1; /* Fait en sorte que la liste s'étende pour occuper tout l'espace disponible */
-    justify-content: space-between; /* Espacement égal entre les éléments */
+    height: 100%;
     width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   .NavBar_Item {
-    flex-grow: 1; /* Chaque élément de la liste s'étend pour occuper l'espace disponible */
-    height: 5.5rem;
+    height: 100%;  /* Prend toute la hauteur du conteneur */
+    width: calc(100% / 5); /* Si vous avez 5 éléments, cela garantira que chaque élément prendra 1/5 de la largeur totale, les rendant carrés */
     border: solid black 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centrer le texte à l'intérieur de chaque élément */
-    cursor: pointer; /* Curseur de souris au survol */
-  }
+    text-align: center;
+    cursor: pointer;
+    }
+
+   .Header-Right {
+    width: 100%;
+    flex-grow: 1;
+
+   } 
 }
+
+
+
 .FirstBlock {
   background-color: rgba(255, 0, 0, 0.164);
   height: 100%;
@@ -85,6 +100,80 @@
 
 .infoList {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0.2rem;
+}
+
+
+// ------------------ PAGE HOME ------------------ //
+.Home {
+  display: flex;
+  flex-direction: row;
+}
+
+.Home-Left{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border-right: solid black 1px;
+
+  
+}
+
+.Home-Left-First {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  padding-left: 5rem;
+  gap: 5rem;
+}
+
+.Logo-Container {
+
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative; 
+  height: 6.5rem;
+
+}
+
+.Logo {
+
+}
+
+.Logo img {
+  width: 100%;  /* prend la largeur complète du conteneur parent */
+  height: auto; /* pour garder l'aspect ratio de l'image */
+  border-radius: 50%;
+  display: block; /* pour éliminer tout espace blanc autour de l'image */
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+
+.Logo-Title {
+  position: absolute;
+  left: 0;
+}
+
+.Home-Right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title-Right {
+  background-color: rgba(0, 0, 255, 0.514);
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Home-Left-tile {
+  
+  align-self: center;
 }

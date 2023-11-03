@@ -5,7 +5,9 @@ import Cv from '../mainContent/Cv';
 import Home from '../mainContent/Home';
 import Portofoglio from '../mainContent/Portofoglio';
 
+import '../../styles/_reset.scss';
 import './App.scss';
+
 
 function App() {
   // NAVBAR
