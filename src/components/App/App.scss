@@ -1,4 +1,6 @@
 @use '../../styles/variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 .App {
   display: flex;
@@ -11,7 +13,6 @@
   
   height: 15rem;
   width: 100%;
-  border-bottom: 2px black solid;
 
   .photo {
     height: 100%;
@@ -22,25 +23,30 @@
   .name {
     height: 4rem;
     color: rgba(255, 255, 255, 0.897);
-    background-color: rgba(2, 2, 2, 0.795);
+    background-color: #e9844198;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 300;
     display: flex;
     align-items: center;
     padding-left: 7.5rem;
+    box-shadow: inset 0px 0px 5px 2px  #e9844165; 
+
+
   }
 
   .job {
     height: 4rem;
 
     color: rgba(255, 255, 255, 0.897);
-    background-color: rgba(2, 2, 2, 0.849);
+    background-color: #e98441bb;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     padding-left: 7.5rem;
+    box-shadow: inset 0px 0px 5px 2px  #e984414b; 
+
   }
 
   .Navbar_Container {
@@ -61,9 +67,9 @@
 
   .NavBar_Item {
     height: 100%;  /* Prend toute la hauteur du conteneur */
-    width: calc(100% / 5); /* Si vous avez 5 éléments, cela garantira que chaque élément prendra 1/5 de la largeur totale, les rendant carrés */
-    border: solid black 1px;
+    width: calc(100% / 4); /* Si vous avez 5 éléments, cela garantira que chaque élément prendra 1/5 de la largeur totale, les rendant carrés */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -75,6 +81,22 @@
     flex-grow: 1;
 
    } 
+
+   .Nav-Home {
+    background-color: #eec5b7;
+
+
+   }
+   .Nav-Cv {
+    background-color: 	#ffcebeb9;
+   }
+   .Nav-Portofoglio {
+    background-color: #ffe9f0;
+   }
+   .Nav-Contact {
+    background-color: #ffe3c05d;
+   }
+
 }
 
 
@@ -109,7 +131,6 @@
 .Home {
   display: flex;
   flex-direction: row;
-  background: rgba(187, 183, 183, 0.61);
 
 
 }
@@ -119,6 +140,8 @@
   display: flex;
   flex-direction: column;
   border-right: solid black 1px;
+  background: #FBE0C3;
+
 
   
 }
@@ -166,6 +189,9 @@
   width: 40%;
   display: flex;
   flex-direction: column;
+  background-color:  rgba(250, 161, 66, 0.349);
+  padding: 0.20rem;
+
 }
 
 .Title-Right {
@@ -181,6 +207,16 @@
   
   align-self: center;
 }
+
+
+.Description {
+  font-family: 'Montserrat', sans-serif;
+  text-indent: 2em;
+}
+
+
+
+
 
 .circle{
   position: absolute;

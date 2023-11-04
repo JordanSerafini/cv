@@ -1,11 +1,11 @@
 import expressLogo from "../../assets/expressLogo.png";
 import jsLogo from "../../assets/jsLogo.png";
-import mongoLogo from "../../assets/mongoLogo.jpg";
+import mongoLogo from "../../assets/mongoLogo-2.png";
 import nodeLogo from "../../assets/nodeLogo.png";
 import pgLogo from "../../assets/pgLogo.png";
 import reactLogo from "../../assets/reactLogo.png";
 import reduxLogo from "../../assets/reduxLogo.png";
-import tailwindLogo from "../../assets/tailwindLogo.jpg";
+import tailwindLogo from "../../assets/tailwindLogo-2.png";
 import socketLogo from "../../assets/socketLogo.png";
 import dockerLogo from "../../assets/dockerLogo.png";
 import githubLogo from "../../assets/githubLogo.png";
@@ -62,9 +62,8 @@ function Home() {
           <div className="Logo">
           <img src={dockerLogo} alt="Docker Logo" />
           </div>
-          <div className="Logo">
-          <img src={githubLogo} alt="Github Logo" />
-          </div>
+          
+          
         </div>
       </div>
       <div className="Home-Left-Second">
@@ -73,20 +72,31 @@ function Home() {
       </div>
       <div className="Home-Right">
         <div className="FirstRight-Container">
-          <h3  className="Title-Right">A propos de moi:</h3>
-          <p className="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque placeat esse consequuntur fugiat ducimus, optio officia, numquam molestias itaque blanditiis nihil quod quidem cupiditate eos beatae accusamus distinctio inventore vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium tempora ducimus qui deleniti corporis reiciendis. Voluptatem perspiciatis earum eum sunt qui, sit, molestiae natus necessitatibus explicabo possimus excepturi corrupti.loreming Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga cum aut pariatur enim dolores voluptatem esse perferendis neque. Natus in et consequatur delectus modi porro. Dignissimos magni cupiditate dolorem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, quos tempora. Optio modi minima repellat provident ducimus voluptates sed labore excepturi rerum maxime? Corporis, modi reiciendis voluptatum recusandae consequuntur iusto. lorem elit. Doolor laboriosam magni quisquam assumenda vitae labore accusantium, dolorem eum sint, in possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsa nulla quos facere. Error temporibus aut atque dolores vero accusantium excepturi ratione consequuntur reiciendis, ex saepe ipsa nostrum laboriosam architecto.</p>
-      </div>
+            <h3  className="Title-Right">A propos de moi:</h3>
+            <p className="Description">Passionné de technologie depuis toujours, j'ai décidé d'embrasser pleinement cet intérêt en me dirigeant vers une carrière dans le domaine informatique. Fort d'une reconversion professionnelle ciblée, j'ai acquis des compétences solides en développement fullstack Javascript grâce à une formation intensive à l'école O'clock, complétée par des cours spécialisés chez Dyma.
+              <br></br><br></br>
+          Actuellement à la recherche d'une alternance pour un bachelor niveau bac+3, je suis désireux de continuer à me perfectionner et à contribuer au sein d'une entreprise dynamique. Engagé, déterminé et ouvert aux défis, je suis prêt à mettre à profit ma motivation et mon adaptabilité pour exceller dans cette nouvelle étape professionnelle.
+          <br></br><br></br>
+          En parralèle je fais du Webscappring et divers autres projets disponible sur mon github Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde necessitatibus fugit iste aliquam explicabo dignissimos, numquam nostrum quam excepturi ipsa voluptatibus nobis a nihil error placeat animi exercitationem natus. Nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deserunt repellendus non labore ratione autem pariatur adipisci, obcaecati, a officiis cum. Iure vero quasi doloribus suscipit, nam quod vel at!
+          </p>
+          
+        </div>
       
         <div className="SecondRight-Container">
-          <h3 className="Title-Right">Contact:</h3>
-          <p>Email:<span>Jordanserafini74370@gmail.com</span></p>
-          <p>LinkedinLogo</p>
-          <p>FacebookLogo</p>
-          <p>TwitterLogo</p>
-
-
+          <h3 className="Title-Right">Détails::</h3>
+           <p>Email:<span>Jordanserafini.74@gmail.com</span></p>
+           <p>Téléphone:<span>06-27-08-64-75</span></p>  
+           <div className="Contact-Logo">
+            <p>Github:</p>
+          <img src={githubLogo} alt="Github Logo" />
+          </div>    
+          <div className="Contact-Logo">
+            <p>LinkedinLogo:</p>
+            <img src={LinkdnLogo} alt="Lkdn Logo" />
+          </div>
+          
         </div>
-        </div>
+      </div>
 
       
     </div>
@@ -94,3 +104,6 @@ function Home() {
 }
 
 export default Home;
+
+
+
