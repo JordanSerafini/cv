@@ -7,9 +7,11 @@ function Header({ content, changeContent }) {
       <div className="photo">
         <img src={Photo} alt="Ma Photo" />
       </div>{' '}
-      <div className="name">SERAFINI JORDAN</div>
-      <div className="job">DEVELOPPEUR WEB</div>
-      <Navbar content={content} changeContent={changeContent} />
+      <div className='Header-Right'>
+        <div className="name">SERAFINI JORDAN</div>
+        <div className="job">DEVELOPPEUR WEB</div>
+        <Navbar content={content} changeContent={changeContent} />
+      </div>
     </div>
   );
 }
