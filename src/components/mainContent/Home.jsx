@@ -76,8 +76,7 @@ function Home() {
             <p className="Description">Passionné de technologie depuis toujours, j'ai décidé d'embrasser pleinement cet intérêt en me dirigeant vers une carrière dans le domaine informatique. Fort d'une reconversion professionnelle ciblée, j'ai acquis des compétences solides en développement fullstack Javascript grâce à une formation intensive à l'école O'clock, complétée par des cours spécialisés chez Dyma.
               <br></br><br></br>
           Actuellement à la recherche d'une alternance pour un bachelor niveau bac+3, je suis désireux de continuer à me perfectionner et à contribuer au sein d'une entreprise dynamique. Engagé, déterminé et ouvert aux défis, je suis prêt à mettre à profit ma motivation et mon adaptabilité pour exceller dans cette nouvelle étape professionnelle.
-          <br></br><br></br>
-          En parralèle je fais du Webscappring et divers autres projets disponible sur mon github Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde necessitatibus fugit iste aliquam explicabo dignissimos, numquam nostrum quam excepturi ipsa voluptatibus nobis a nihil error placeat animi exercitationem natus. Nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, deserunt repellendus non labore ratione autem pariatur adipisci, obcaecati, a officiis cum. Iure vero quasi doloribus suscipit, nam quod vel at!
+          
           </p>
           
         </div>

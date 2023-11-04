@@ -1,5 +1,7 @@
 @use '../../styles/variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Noto+Serif+Old+Uyghur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 
 
 .App {
@@ -23,14 +25,14 @@
   .name {
     height: 4rem;
     color: rgba(255, 255, 255, 0.897);
-    background-color: #e9844198;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #204e4adc;
+    font-family: 'Noto Serif Old Uyghur', serif;
     font-size: 2.2rem;
     font-weight: 300;
     display: flex;
     align-items: center;
     padding-left: 7.5rem;
-    box-shadow: inset 0px 0px 5px 2px  #e9844165; 
+    box-shadow: inset 0px 0px 5px 2px  #204e4a; 
 
 
   }
@@ -39,13 +41,13 @@
     height: 4rem;
 
     color: rgba(255, 255, 255, 0.897);
-    background-color: #e98441bb;
+    background-color: #204e4a;
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     display: flex;
     align-items: center;
     padding-left: 7.5rem;
-    box-shadow: inset 0px 0px 5px 2px  #e984414b; 
+    box-shadow: inset 0px 0px 5px 2px   #204e4adc; 
 
   }
 
@@ -63,6 +65,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    font-family: 'Kenia', sans-serif;
   }
 
   .NavBar_Item {
@@ -83,16 +86,18 @@
    } 
 
    .Nav-Home {
-    background-color: #eec5b7;
+    background-color: #8ab1ad;
 
 
    }
    .Nav-Cv {
-    background-color: 	#ffcebeb9;
-   }
-   .Nav-Portofoglio {
-    background-color: #ffe9f0;
-   }
+    background-color: #2f756e;
+;
+
+  }
+  .Nav-Portofoglio {
+    background-color:  #204e4adc;
+  }
    .Nav-Contact {
     background-color: #ffe3c05d;
    }
@@ -139,8 +144,7 @@
   width: 60%;
   display: flex;
   flex-direction: column;
-  border-right: solid black 1px;
-  background: #FBE0C3;
+  background: #74918eb6;
 
 
   
@@ -189,7 +193,7 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  background-color:  rgba(250, 161, 66, 0.349);
+  background-color: #668683;
   padding: 0.20rem;
 
 }
