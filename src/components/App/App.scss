@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Noto+Serif+Old+Uyghur&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 
-
 .App {
   display: flex;
   flex-direction: column;
@@ -12,7 +11,6 @@
 
 .Header {
   display: flex;
-  
   height: 15rem;
   width: 100%;
 
@@ -27,28 +25,24 @@
     color: rgba(255, 255, 255, 0.897);
     background-color: #204e4adc;
     font-family: 'Noto Serif Old Uyghur', serif;
-    font-size: 2.2rem;
+    font-size: 2.2rem; // Taille de police par défaut
     font-weight: 300;
     display: flex;
     align-items: center;
     padding-left: 7.5rem;
     box-shadow: inset 0px 0px 5px 2px  #204e4a; 
-
-
   }
 
-  .job {
+  .Job {
     height: 4rem;
-
     color: rgba(255, 255, 255, 0.897);
     background-color: #204e4a;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 2rem; // Taille de police par défaut
     display: flex;
     align-items: center;
     padding-left: 7.5rem;
     box-shadow: inset 0px 0px 5px 2px   #204e4adc; 
-
   }
 
   .Navbar_Container {
@@ -299,3 +293,82 @@
 }
 
 
+// ---------------------- MOBILE ---------------------- //
+
+@media (max-width: 480px) {
+
+  .circle{
+    display: none;
+  }
+
+
+  .Header {
+    height: 6rem;
+    .photo {
+      width: 18%;
+    }
+
+    .name {
+      font-size: 1.5rem; 
+      height: 50%;
+    }
+
+    .Job {
+      font-size: 1.3rem; // Plus petit pour les mobiles
+      display: none ;
+    }
+    .Navbar_Container {
+      height: 50%;
+    }
+    
+    .NavBar_Item img { // Supposant que vos icônes sont des images
+      width: 25px; // Ou la taille que vous voulez
+      height: auto; // Pour maintenir le ratio d'aspect
+    }
+
+    .NavBar_List {
+      font-size: 0.7rem;
+    }
+
+  }
+
+  .Home-Left {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .Home {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .Logo-Container {
+    width: 100%;
+  }
+
+  .Home-Right {
+    width: 100%;
+    
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Header {
+    .name, .Job {
+      font-size: 1.8rem; // Taille intermédiaire pour les tablettes
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Header {
+    .name, .Job {
+      font-size: 2rem; // Un peu plus grand pour les petits ordinateurs
+    }
+  }
+}

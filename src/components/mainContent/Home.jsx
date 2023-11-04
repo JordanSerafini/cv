@@ -19,7 +19,6 @@ function Home() {
   return (
     <div className="Home">
       <div className="Home-Left">
-      <div className="Home-Left-First">
         <h2 className="Home-Left-tile">Compétences:</h2>
         <div className="Logo-Container">
           <h4 className="Logo-Title">Front-End:</h4>
@@ -64,11 +63,8 @@ function Home() {
           </div>
           
           
-        </div>
-      </div>
-      <div className="Home-Left-Second">
-        <p>suite</p>
-      </div>
+        </div> 
+      
       </div>
       <div className="Home-Right">
         <div className="FirstRight-Container">
