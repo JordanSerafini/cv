@@ -9,6 +9,7 @@ import '../../styles/_reset.scss';
 import './App.scss';
 
 
+
 function App() {
   // NAVBAR
   const [content, setContent] = useState('Home');

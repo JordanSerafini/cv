@@ -7,6 +7,8 @@ import dlLogo from '../../../assets/dlLogo.png';
 import portfoglioLogo from '../../../assets/portfoglioLogo.png';
 import mailLogo from '../../../assets/mailLogo.png';
 
+
+
 function Navbar({ content, changeContent }) {
   return (
     <div className="Navbar_Container">
