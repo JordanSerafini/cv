@@ -164,9 +164,7 @@
 
 }
 
-.Logo {
 
-}
 
 .Logo img {
   width: 100%;  /* prend la largeur complète du conteneur parent */
@@ -301,15 +299,26 @@
     display: none;
   }
 
+  .photo {
+    display: none;
+  }
+
+
 
   .Header {
-    height: 6rem;
-    .photo {
-      width: 18%;
+    display: flex;
+    align-items: center;
+    
+    .Header-Right {
+      display: flex;
+      flex-direction: column;
+      
     }
-
+    
     .name {
-      font-size: 1.5rem; 
+      justify-content: center;
+      padding: 0;
+      font-size: 1.2rem; 
       height: 50%;
     }
 
@@ -318,6 +327,7 @@
       display: none ;
     }
     .Navbar_Container {
+      
       height: 50%;
     }
     
@@ -327,28 +337,42 @@
     }
 
     .NavBar_List {
+      
       font-size: 0.7rem;
     }
 
   }
 
-  .Home-Left {
-    width: 100%;
-    height: 35%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
+  
   .Home {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
+  .Home-Left {
+    width: 100%;
+    height: 20%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: black solid 0.3px;
+  }
+
+  .Logo {
+    height: 3rem;
+    width: 3rem;
+  }
+
+
   .Logo-Container {
     width: 100%;
+
   }
+
+
 
   .Home-Right {
     width: 100%;
@@ -356,6 +380,8 @@
   }
 
 }
+
+
 
 @media (min-width: 481px) and (max-width: 768px) {
   .Header {

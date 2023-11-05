@@ -18,6 +18,7 @@ import { faPhone, faEnvelope, faHome, faAddressBook, faDownload  } from '@fortaw
 function Home() {
   return (
     <div className="Home">
+      
       <div className="Home-Left">
         <h2 className="Home-Left-tile">Compétences:</h2>
         <div className="Logo-Container">
