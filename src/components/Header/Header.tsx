@@ -15,8 +15,8 @@ const Header: React.FC<HeaderProps> = ({ className = "default-header-class", con
         <img src={Photo} alt="Ma Photo" />
       </div>
       <div className='Header-Right'>
-        <div className="name">SERAFINI JORDAN</div>
-        <div className="Job">DÉVELOPPEUR WEB</div>
+        <div className="name"><span className='name-Title'>SERAFINI JORDAN</span></div>
+        <div className="Job"><span className='Job-Title'>DÉVELOPPEUR WEB</span></div>
         <div>
           <Navbar content={content} changeContent={changeContent} />
         </div>
