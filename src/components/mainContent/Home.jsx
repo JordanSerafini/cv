@@ -9,15 +9,14 @@ import tailwindLogo from "../../assets/tailwindLogo-2.png";
 import socketLogo from "../../assets/socketLogo.png";
 import dockerLogo from "../../assets/dockerLogo.png";
 import githubLogo from "../../assets/githubLogo.png";
-import LinkdnLogo from "../../assets/linkdnLogo.png";
+import linkdnLogo from "../../assets/linkdnLogo.png"; // Assurez-vous que le nom de fichier est correct et utilisez la même casse
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faHome, faAddressBook, faDownload  } from '@fortawesome/free-solid-svg-icons';
 
 
 function Home() {
   return (
     <div className="Home">
+      
       
       <div className="Home-Left">
         <h2 className="Home-Left-tile">Compétences:</h2>
@@ -25,42 +24,50 @@ function Home() {
           <h4 className="Logo-Title">Front-End:</h4>
           <div className="Logo">
           <img src={jsLogo} alt="JavaScript Logo" />
+          <p className="Logo-Name">Javascript</p>
           </div>
           <div className="Logo">
           <img src={reactLogo} alt="React Logo" />
+          <p className="Logo-Name">React</p>
           </div>
           <div className="Logo">
           <img src={tailwindLogo} alt="Tailwind Logo" />
+          <p className="Logo-Name">Tailwind</p>
           </div>
           <div className="Logo">
           <img src={reduxLogo} alt="Redux Logo" />
+          <p className="Logo-Name">Redux</p>
           </div>
         </div>
         <div className="Logo-Container">
         <h4 className="Logo-Title">Back-End:</h4>
           <div className="Logo">
           <img src={nodeLogo} alt="Node Logo" />
+          <p className="Logo-Name">Node JS</p>
           </div>
           <div className="Logo">
           <img src={expressLogo} alt="Express Logo" />
+          <p className="Logo-Name">Express JS</p>
           </div>
           <div className="Logo">
           <img src={pgLogo} alt="PostgreSQL Logo" />
+          <p className="Logo-Name">PostgreSQL - SQL</p>
           </div>
           <div className="Logo">
           <img src={mongoLogo} alt="MongoDB Logo" />
+          <p className="Logo-Name">Mongo DB</p>
           </div>
-          <div className="Logo">
-          <img src={jsLogo} alt="JavaScript Logo" />
-          </div>
+    
         </div>
         <div className="Logo-Container">
           <h4 className="Logo-Title">Autres:</h4>
           <div className="Logo">
           <img src={socketLogo} alt="Socket.io Logo" />
+          <p className="Logo-Name">Xeb Socket</p>
           </div>
           <div className="Logo">
           <img src={dockerLogo} alt="Docker Logo" />
+          <p className="Logo-Name">Docker</p>
           </div>
           
           
@@ -69,6 +76,7 @@ function Home() {
       </div>
       <div className="Home-Right">
         <div className="FirstRight-Container">
+        
             <h3  className="Title-Right">A propos de moi:</h3>
             <p className="Description">Passionné de technologie depuis toujours, j'ai décidé d'embrasser pleinement cet intérêt en me dirigeant vers une carrière dans le domaine informatique. Fort d'une reconversion professionnelle ciblée, j'ai acquis des compétences solides en développement fullstack Javascript grâce à une formation intensive à l'école O'clock, complétée par des cours spécialisés chez Dyma.
               <br></br><br></br>
@@ -88,7 +96,7 @@ function Home() {
           </div>    
           <div className="Contact-Logo">
             <p>LinkedinLogo:</p>
-            <img src={LinkdnLogo} alt="Lkdn Logo" />
+            <img src={linkdnLogo} alt="Lkdn Logo" />
           </div>
           
         </div>
