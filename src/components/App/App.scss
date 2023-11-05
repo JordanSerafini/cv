@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Noto+Serif+Old+Uyghur&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kenia&display=swap');
 
 .App {
   display: flex;
@@ -169,12 +170,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
+  gap: 0.35rem;
 }
 
 .Logo-Name {
+  position: relative; /* Nécessaire pour positionner les pseudo-éléments */
   font-size: small;
-  border-bottom: #204e4a solid 1px;
+}
+
+.Logo-Name::after,
+.Logo-Name::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 1px; /* L'épaisseur de votre bordure */
+  background-color: #204e4a; /* La couleur de votre bordure */
+}
+
+.Logo-Name::after {
+  right: 50%; /* Démarre à la moitié droite de l'élément */
+  width: 70%; /* Longueur de la bordure de droite */
+  transform: translateX(50%); /* Déplace la bordure vers la droite pour rogner le début */
+}
+
+.Logo-Name::before {
+  left: 50%; /* Démarre à la moitié gauche de l'élément */
+  width: 50%; /* Longueur de la bordure de gauche */
+  transform: translateX(-50%); /* Déplace la bordure vers la gauche pour rogner la fin */
 }
 
 .Logo img {
@@ -188,9 +210,14 @@
 
 
 .Logo-Title {
+  padding-left: 0.5rem;
   position: absolute;
   left: 0;
+  font-family: 'Kenia', sans-serif;
+  
 }
+
+
 
 .Home-Right {
   width: 40%;
@@ -211,8 +238,11 @@
 }
 
 .Home-Left-tile {
-  
+  font-family: 'Kenia', sans-serif;
   align-self: center;
+  border-bottom: solid 1px black;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 
