@@ -51,7 +51,7 @@ function Home() {
           </div>
           <div className="Logo">
           <img src={pgLogo} alt="PostgreSQL Logo" />
-          <p className="Logo-Name">PostgreSQL - SQL</p>
+          <p className="Logo-Name">PostgreSQL</p>
           </div>
           <div className="Logo">
           <img src={mongoLogo} alt="MongoDB Logo" />
