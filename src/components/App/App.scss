@@ -419,6 +419,8 @@
       font-size: 1.2rem; 
       height: 50%;
       position: relative;
+      background-color:  #204e4a;
+
     }
     
     .name::after {
@@ -428,15 +430,16 @@
       right: 0;
       width: 100%; /* La largeur prend toute la largeur de l'élément */
       background: rgba(255, 255, 255, 0.781); /* La couleur de la ligne */
-      animation: slideVertical 8s infinite; /* Durée et répétition de l'animation */
+      animation: slideVertical 10s infinite; /* Durée et répétition de l'animation */
       pointer-events: none; /* Assure que l'effet ne gêne pas les clics */
     }
 
     .name-Title {
-      padding: 0.1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       border-radius: 5rem; 
-      background-color:  #204e4adc;
       z-index: 1;
+      background-color:  #204e4a;
     }
 
     .Job {
