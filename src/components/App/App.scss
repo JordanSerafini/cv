@@ -174,11 +174,11 @@
 
 .Logo-Name {
   font-size: small;
+  border-bottom: #204e4a solid 1px;
 }
 
 .Logo img {
-  width: 100%;  /* prend la largeur complète du conteneur parent */
-  height: auto; /* pour garder l'aspect ratio de l'image */
+
   border-radius: 50%;
   display: block; /* pour éliminer tout espace blanc autour de l'image */
   width: 3.5rem;
@@ -373,8 +373,8 @@
   }
 
   .Logo {
-    height: 3rem;
-    width: 3rem;
+    height: 100%;
+    width: 100%;
     
   }
 
