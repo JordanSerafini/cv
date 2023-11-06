@@ -414,13 +414,13 @@
 }
 
 
-
+//------------------------------------------------------//
 // ---------------------- MOBILE ---------------------- //
+//------------------------------------------------------//
 
 @media (max-width: 480px) {
 
-
-
+  
   .circle{
     display: none;
   }
@@ -498,7 +498,7 @@
     height: 100%;
   }
 
-  .Home-Left {
+  .Home-Left { // >>> Icone Compétense
     border: solid #74918e 2px;
     box-shadow:
       0 -10px 20px rgba(32, 78, 74, 0.5), /* Ombre en haut */
@@ -513,8 +513,13 @@
   }
   
 
-  .Home-Right {
+  .Home-Right { // Details et description
     width: 100%;
+    height: 80%;
+    border: solid red 2px;
+    overflow: hidden;
+    overflow-y: auto;
+
     
   }
 

@@ -73,6 +73,7 @@ function Home() {
         </div> 
       
       </div>
+      
       <div className="Home-Right">
         <div className="FirstRight-Container">
         
@@ -111,8 +112,7 @@ function Home() {
           
         </div>
       </div>
-
-      
+  
     </div>
   );
 }
