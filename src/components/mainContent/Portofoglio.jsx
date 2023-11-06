@@ -1,6 +1,14 @@
+import backgroundVideo from '../../assets/background-Anim.mp4';
+
 function Portofoglio() {
   return (
     <div className="Portofoglio">
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="content">
+
       <h2>
       Bienvenue dans mon univers de développement
       </h2>    
@@ -24,6 +32,7 @@ function Portofoglio() {
       <p>
         Ma palette de compétences s'étend sur les technologies les plus récentes et les plus demandées du développement web. Je maîtrise JavaScript et son écosystème, et j'ai une expérience pratique avec des bases de données comme PostgreSQL, des frameworks tels que React, ainsi que des outils de développement moderne comme Docker et Socket.IO.
       </p>
+      </div>
     </div>
   );
 }

@@ -16,8 +16,7 @@ import linkdnLogo from "../../assets/linkdnLogo.png"; // Assurez-vous que le nom
 function Home() {
   return (
     <div className="Home">
-      
-      
+
       <div className="Home-Left">
         <h2 className="Home-Left-tile">Compétences:</h2>
         <div className="Logo-Container">
@@ -63,7 +62,7 @@ function Home() {
           <h4 className="Logo-Title">Autres:</h4>
           <div className="Logo">
           <img src={socketLogo} alt="Socket.io Logo" />
-          <p className="Logo-Name">Xeb Socket</p>
+          <p className="Logo-Name">Web Socket</p>
           </div>
           <div className="Logo">
           <img src={dockerLogo} alt="Docker Logo" />
@@ -86,18 +85,28 @@ function Home() {
           
         </div>
       
+        <h3 className="Title-Right">Détails::</h3>
         <div className="SecondRight-Container">
-          <h3 className="Title-Right">Détails::</h3>
-           <p>Email:<span>Jordanserafini.74@gmail.com</span></p>
-           <p>Téléphone:<span>06-27-08-64-75</span></p>  
-           <div className="Contact-Logo">
-            <p>Github:</p>
-          <img src={githubLogo} alt="Github Logo" />
-          </div>    
-          <div className="Contact-Logo">
-            <p>LinkedinLogo:</p>
-            <img src={linkdnLogo} alt="Lkdn Logo" />
+          
+          <div className="Bio-Email">
+            <p>Email:</p>
+            <p>Jordanserafini.74@gmail.com</p>
           </div>
+          <div className="Bio-Tel">
+           <p>Téléphone:</p>
+           <p>06-27-08-64-75</p> 
+           </div>
+          <div className="Bio-Link-Container">
+            <div className="Bio-Github">
+              <p>Github:</p>
+              <img src={githubLogo} alt="Github Logo" />
+            </div>
+            <div className="Bio-Linkedin">
+              <p>LinkedinLogo:</p>
+              <img src={linkdnLogo} alt="Lkdn Logo" />
+            </div>
+          </div> 
+          
           
         </div>
       </div>

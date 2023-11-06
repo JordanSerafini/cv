@@ -4,20 +4,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Kenia&display=swap');
 
+#root, .App {
+  height: 100%;
+}
+
 :root {
   --name-color:  #204e4adc;
 }
 
 .App {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: column;  
+}
+
+.content-grid {
+  height: 100%;
 }
 
 .Header {
   display: flex;
-  height: 15rem;
   width: 100%;
+  
+  
 
   .photo {
     height: 100%;
@@ -70,11 +78,11 @@
       bottom: 0; /* Commence du bas */
       height: 2px; /* L'épaisseur de votre ligne */
     }
-    20%, 80% {
+    25%, 80% {
       bottom: 50%; /* Montez jusqu'au milieu (ajustez selon le besoin) */
       height: 2px;
     }
-    40%, 60% {
+    50%, 60% {
       bottom: 100%; /* Montez jusqu'en haut */
       height: 2px;
     }
@@ -129,8 +137,7 @@
     }
 
  
-    
-
+  
    .Header-Right {
     width: 100%;
     flex-grow: 1;
@@ -157,38 +164,49 @@
 }
 
 
+.Description {
+  padding: 0.5rem;
+  color:rgba(255, 255, 255, 0.89);
+}
 
-.FirstBlock {
-  background-color: rgba(255, 0, 0, 0.164);
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.Title-Right {
+  color:white;
+}
+
+.SecondRight-Container {
+  color:rgba(255, 255, 255, 0.89);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.SecondRight-Container {
+  padding: 0.5rem;
+  
+}
+
+.Bio-Github, .Bio-Linkedin, .Bio-Email, .Bio-Tel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
 .Competence {
   grid-column: span 3;
 }
 
-.InfoPerso {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  grid-column: span 2;
-}
 
-.infoList {
-  display: flex;
-  flex-direction: row;
-  padding: 0.2rem;
-}
+
 
 
 // ------------------ PAGE HOME ------------------ //
 .Home {
   display: flex;
   flex-direction: row;
-
+  height: 100%;
+  width: 100%;
+  
 
 }
 
@@ -197,6 +215,8 @@
   display: flex;
   flex-direction: column;
   background: #74918eb6;
+  height: 100%;
+  
 
 
   
@@ -309,6 +329,48 @@
 }
 
 
+// ------------------ PAGE Portofoglio ------------------ //
+.background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover; /* pour couvrir toute la zone sans perdre les proportions */
+  z-index: -1; /* pour placer la vidéo en arrière-plan */
+}
+
+.Portofoglio {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ou la hauteur désirée */
+  overflow: hidden;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+  position: relative;
+  z-index: 1; /* pour s'assurer que le texte apparaît au-dessus de la vidéo */
+  color: white; /* ou la couleur désirée pour le texte */
+  padding: 20px; /* ajustez selon vos besoins */
+  /* Ajoutez plus de styles ici pour aligner et styliser votre texte */
+}
+
 
 
 
@@ -393,6 +455,8 @@
 
 @media (max-width: 480px) {
 
+
+
   .circle{
     display: none;
   }
@@ -472,13 +536,17 @@
 
   .Home-Left {
     width: 100%;
-    height: 20%;
+    height: 15rem;
     overflow-y: scroll;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     border-top: black solid 0.3px;
+  }
+
+  .Home-Left-tile {
+    display: none;
   }
 
   .Logo {
@@ -504,7 +572,6 @@
 }
 
 
-
 @media (min-width: 481px) and (max-width: 768px) {
   .Header {
     .name, .Job {
@@ -520,3 +587,6 @@
     }
   }
 }
+
+
+
