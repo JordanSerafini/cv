@@ -87,22 +87,23 @@ function Home() {
       
         <h3 className="Title-Right">Détails::</h3>
         <div className="SecondRight-Container">
-          
-          <div className="Bio-Email">
-            <p>Email:</p>
-            <p>Jordanserafini.74@gmail.com</p>
+          <div className="Bio-Contact-Container">
+            <div className="Bio-Email">
+              <p>Email:</p>
+              <p>Jordanserafini.74@gmail.com</p>
+            </div>
+            <div className="Bio-Tel">
+              <p>Téléphone:</p>
+              <p>06-27-08-64-75</p> 
+            </div>
           </div>
-          <div className="Bio-Tel">
-           <p>Téléphone:</p>
-           <p>06-27-08-64-75</p> 
-           </div>
           <div className="Bio-Link-Container">
             <div className="Bio-Github">
               <p>Github:</p>
               <img src={githubLogo} alt="Github Logo" />
             </div>
             <div className="Bio-Linkedin">
-              <p>LinkedinLogo:</p>
+              <p>Linkedin:</p>
               <img src={linkdnLogo} alt="Lkdn Logo" />
             </div>
           </div> 
