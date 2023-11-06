@@ -476,6 +476,10 @@
   }
 
   .Home-Left {
+    border: solid #74918e 2px;
+    box-shadow:
+      0 -10px 20px rgba(32, 78, 74, 0.5), /* Ombre en haut */
+      0 10px 20px rgba(32, 78, 74, 0.5); /* Ombre en bas */
     width: 100%;
     height: 20%;
     overflow-y: scroll;
@@ -483,8 +487,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border-top: black solid 0.3px;
   }
+  
 
   .Home-Right {
     width: 100%;
