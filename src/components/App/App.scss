@@ -27,6 +27,7 @@
 .Header {
   display: flex;
   width: 100%;
+  color: white;
   
   
 
@@ -269,6 +270,23 @@
   justify-content: center;
   gap: 0.35rem;
 }
+
+.Logo:hover {
+  animation: spin 0.65s linear; /* 'linear' pour une vitesse constante */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); /* 360deg * 2 */
+  }
+}
+
+
+
+
 
 .Logo-Name {
   position: relative; /* Nécessaire pour positionner les pseudo-éléments */
