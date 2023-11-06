@@ -79,8 +79,8 @@ function Home() {
         
             <h3  className="Title-Right">A propos de moi:</h3>
             <p className="Description">Passionné de technologie depuis toujours, j'ai décidé d'embrasser pleinement cet intérêt en me dirigeant vers une carrière dans le domaine informatique. Fort d'une reconversion professionnelle ciblée, j'ai acquis des compétences solides en développement fullstack Javascript grâce à une formation intensive à l'école O'clock, complétée par des cours spécialisés chez Dyma.
-              <br></br><br></br>
-          Actuellement à la recherche d'une alternance pour un bachelor niveau bac+3, je suis désireux de continuer à me perfectionner et à contribuer au sein d'une entreprise dynamique. Engagé, déterminé et ouvert aux défis, je suis prêt à mettre à profit ma motivation et mon adaptabilité pour exceller dans cette nouvelle étape professionnelle.
+              
+          <div className="">Actuellement à la recherche d'une alternance pour un bachelor niveau bac+3, je suis désireux de continuer à me perfectionner et à contribuer au sein d'une entreprise dynamique. Engagé, déterminé et ouvert aux défis, je suis prêt à mettre à profit ma motivation et mon adaptabilité pour exceller dans cette nouvelle étape professionnelle.</div>
           
           </p>
           

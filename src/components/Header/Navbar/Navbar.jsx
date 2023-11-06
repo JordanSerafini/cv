@@ -1,4 +1,5 @@
 //import './Navbar.css';
+import React, { useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faHome, faAddressBook, faDownload  } from '@fortawesome/free-solid-svg-icons';
@@ -10,10 +11,18 @@ import mailLogo from '../../../assets/mailLogo.png';
 
 
 function Navbar({ content, changeContent }) {
+
+  const [activeItem, setActiveItem] = useState('Home'); // Par défaut, 'Home' est actif
+
+  const handleClick = (item) => {
+    setActiveItem(item);
+    changeContent(item);
+  };
+
   return (
     <div className="Navbar_Container">
       <ul className="NavBar_List">
-        <li className="NavBar_Item Nav-Home" onClick={() => changeContent('Home')}>
+      <li className={`NavBar_Item Nav-Home ${activeItem === 'Home' ? 'active' : ''}`} onClick={() => handleClick('Home')}>
             
         <img src={homeLogo} alt="Node Logo" />
         <p>Acceuil</p>
