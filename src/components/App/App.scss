@@ -355,7 +355,6 @@
   position: relative;
   width: 100%;
   height: 100vh; /* ou la hauteur désirée */
-  overflow: hidden;
   
 }
 
@@ -384,7 +383,6 @@
 .content {
   background: #74918e2a;
   margin: 2rem;
-  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
