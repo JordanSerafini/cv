@@ -164,6 +164,20 @@
 }
 
 
+
+
+
+
+
+// ------------------ PAGE HOME ------------------ //
+.Home {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+}
+
 .Description {
   padding: 0.5rem;
   color:rgba(255, 255, 255, 0.89);
@@ -196,19 +210,6 @@
   grid-column: span 3;
 }
 
-
-
-
-
-// ------------------ PAGE HOME ------------------ //
-.Home {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  
-
-}
 
 .Home-Left{
   width: 60%;
@@ -536,13 +537,20 @@
 
   .Home-Left {
     width: 100%;
-    height: 100%;
+    height: 11%;
     overflow-y: scroll;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     border-top: black solid 0.3px;
+  }
+
+  .Home-Right {
+    width: 100%;
+    height: 89%;
+
+    
   }
 
   .Home-Left-tile {
@@ -564,10 +572,7 @@
 
 
 
-  .Home-Right {
-    width: 100%;
-    
-  }
+
 
 }
 
